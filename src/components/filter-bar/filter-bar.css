@@ -1,0 +1,175 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 60px;
+}
+
+.filter__group {
+  display: flex;
+  flex-direction: column;
+
+  border: none
+}
+
+.filter__head-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.filter__title {
+  margin: 0;
+
+  font-family: "Raleway";
+  font-weight: 500;
+}
+
+.filter__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__label {
+  display: flex;
+}
+
+.filter__label {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  cursor: pointer;
+}
+
+.filter__input {
+  width: 20px;
+  height: 20px;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.filter__submit-button {
+  margin-bottom: 10px;
+  padding: 15px 15px;
+
+  background-color: #b4b2b2;
+
+  font-family: 'Mplus1p';
+  font-weight: 500;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.filter__submit-button:hover {
+  opacity: 0.8;
+}
+
+.filter__reset-button {
+  padding: 15px 15px;
+
+  font-family: 'Mplus1p';
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.filter__reset-button:before{
+  display: inline-block;
+  content: "\00d7";
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.filter__reset-button:hover {
+  color: #000000;
+}
+
+.filter__open-filter-button {
+  position: relative;
+  display: none;
+
+  margin-left: 15px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.filter__open-filter-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #161616;
+
+  transition: 0.2s all;
+}
+
+.filter-open-filter-button--opened::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+@media screen and (max-width: 1366px) {
+  .filter {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .filter {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .filter__head-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .filter__title {
+    font-size: 16px;
+  }
+
+  .filter__open-filter-button {
+    display: block;
+  }
+
+  .filter__wrapper {
+    display: none;
+  }
+
+  .filter__wrapper--opened {
+    display: flex;
+  }
+
+  .filter__submit-button { 
+    width: 200px;
+  }
+
+  .filter__reset-button {
+    width: 200px;
+  }
+}

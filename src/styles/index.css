@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Mplus1p";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Mplus1p-Regular.woff2") format("woff2"), url("../fonts/Mplus1p-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mplus1p";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Mplus1p-Medium.woff2") format("woff2"), url("../fonts/Mplus1p-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Mplus1p";
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

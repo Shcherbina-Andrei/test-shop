@@ -1,0 +1,127 @@
+.order {
+  margin: 0 auto;
+
+  width: 1366px;
+}
+
+.shop__title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.shop__to-main-link {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+
+  text-align: center;
+}
+
+.shop__to-main-link:hover {
+  opacity: 0.7;
+}
+
+.order__products-list {
+  list-style: none;
+}
+
+.order__inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.order__client-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  width: 90%;
+}
+
+.order__client-name,
+.order__client-phone {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 100%;
+  max-width: 350px;
+
+  font-size: 16px;
+}
+
+.order__client-name {
+  margin-bottom: 20px;
+}
+
+.order__input {
+  margin-left: 10px;
+
+  font-size: 16px;
+
+  padding: 6px;
+
+  border-radius: 10px;
+  border: none;
+}
+
+.order__submit-button {
+  width: 200px;
+
+  align-self: center;
+
+  padding: 15px 15px;
+
+  background-color: #998e96;
+
+  font-size: 18px;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.order__submit-button:hover {
+  opacity: 0.8;
+}
+
+.order__submit-button:active {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1366px) {
+  .order {
+    margin: 0 auto;
+  
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .order {
+    margin: 0 auto;
+  
+    width: 92%;
+  }
+
+  .order__client-info {
+    width: 100%;
+  }
+
+  .order__client-name,
+  .order__client-phone {
+    font-size: 14px;
+  }
+
+  .order__input {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+.shop__main-page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 30px;
+
+  margin: 0 auto;
+
+  width: 1366px;
+}
+
+@media screen and (max-width: 1366px) {
+  .shop__main-page {
+    width: 92%;
+    grid-template-columns: 22% 1fr;
+    column-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .shop__main-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
