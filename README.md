@@ -8,15 +8,15 @@
 
 ## Установка
 
-1. Копирование репозитория на компьютер:
+### 1. Копирование репозитория на компьютер:  
 
-### `git clone git@github.com:Shcherbina-Andrei/test-shop.git`
+`git clone git@github.com:Shcherbina-Andrei/test-shop.git`
 
-2. Установка необходимых пакетов:
+### 2. Установка необходимых пакетов:
 
-### `npm install`
+ `npm install`
 
-3. Запуск проекта:
-
-### `npm run start`
+### 3. Запуск проекта:
+ 
+ `npm run start`
 
